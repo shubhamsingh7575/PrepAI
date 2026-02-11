@@ -106,6 +106,7 @@ export default function Header() {
                   userPreviewMainIdentifier:"font-semibold",
                 },
               }}
+              afterSignOutUrl="/"
             />
           </SignedIn>
         </div>
