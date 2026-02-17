@@ -6,8 +6,6 @@ import { revalidatePath } from "next/cache";
 import { generateAIInsights } from "./dashboard";
 
 
-
-
 export async function updateUser(data) {
   const { userId } = await auth();
   if (!userId) throw new Error("Unauthorized");
@@ -31,7 +29,6 @@ export async function updateUser(data) {
 
         if (!industryInsight) {
           const insights = await generateAIInsights(data.industry);
-
           industryInsight = await db.industryInsight.create({
             data: {
               industry: data.industry,
@@ -40,6 +37,8 @@ export async function updateUser(data) {
             },
           });
         }
+
+        console.log("User:", user);
 
         const updatedUser = await tx.user.update({
           where: {
@@ -53,10 +52,12 @@ export async function updateUser(data) {
           },
         });
 
+        console.log("Updated User:", updatedUser);
+
         return { updatedUser, industryInsight };
       },
       {
-        timeout: 10000, // default: 5000
+        timeout: 20000, // default: 5000
       }
     );
 
