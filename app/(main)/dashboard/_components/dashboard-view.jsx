@@ -39,11 +39,11 @@ const DashboardView = ({ insights }) => {
 
   const getDemandLevelColor = (level) => {
     switch (level.toLowerCase()) {
-      case "high":
+      case "HIGH":
         return "bg-green-500";
-      case "medium":
+      case "MEDIUM":
         return "bg-yellow-500";
-      case "low":
+      case "LOW":
         return "bg-red-500";
       default:
         return "bg-gray-500";
