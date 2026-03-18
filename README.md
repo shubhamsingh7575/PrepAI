@@ -9,7 +9,10 @@ PrepAI is a full-stack AI-powered platform designed to help users build strong r
 - Interview Quiz Practice with instant feedback  
 - AI Scorecard Analysis (correct/incorrect answers + explanations)  
 - Industry Trends & Skills exploration  
-- Secure Authentication using Clerk  
+- Secure Authentication using Clerk
+
+## 🌐 Live Demo
+🔗 https:13.53.223.229
 
 ## 🛠️ Tech Stack
 
