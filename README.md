@@ -12,7 +12,8 @@ PrepAI is a full-stack AI-powered platform designed to help users build strong r
 - Secure Authentication using Clerk
 
 ## 🌐 Live Demo
-🔗 https:13.53.223.229
+
+👉 [View Live Project](http://13.53.223.229/)
 
 ## 🛠️ Tech Stack
 
