@@ -14,7 +14,6 @@ PrepAI is a full-stack AI-powered platform designed to help users build strong r
 ## 🌐 Live Demo
 
 
-
 ## 🛠️ Tech Stack
 
 Frontend:
